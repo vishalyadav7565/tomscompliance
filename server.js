@@ -101,7 +101,7 @@ async function saveToGoogleSheet({ name, phone, service, date, time }) {
 }
 
 /* ================= BOOK FREE CALL ================= */
-app.post("https://tomscompliance-production.up.railway.app/api/book-call", async (req, res) => {
+app.post("api/book-call", async (req, res) => {
   try {
     console.log("📩 Incoming body:", req.body); // 🔍 DEBUG (can remove later)
 
